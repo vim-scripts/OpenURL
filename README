@@ -1,0 +1,34 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4753
+
+Type :OpenURL to start the utility.
+It will then search the current line for links, if only one link is found then this link is opened.
+If several links are found; OpenURL will display a prompt like this one:
+
+1: http://www.vim.org
+2: www.youtube.com
+3: mailto://jonasmo441@gmail.com
+?> 
+
+You then answer accordingly with a number.
+
+The following kinds of urls are allowed:
+protocol://domain.ext
+protocol://www.domain.ext
+protocol://www.subdomain.domain.ext
+www.domain.ext
+user@domain.ext
+
+If an email address is found; mailto:// will be the assumed protocol.
+If a www.___.___ link is found; http:// will be the assumed protocol.
+                            
+These protocols are used/found by OpenURL:
+http(s)://
+ftp(s)://
+mailto://
+
+You can send any bugs or feature requests to my email address.
+
+OpenURL.vim  Copyright (C) 2013  Jonas Møller <jonasmo441@gmail.com>
+    This program comes with ABSOLUTELY NO WARRANTY
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; go to http://www.gnu.org/copyleft/gpl.html for details
