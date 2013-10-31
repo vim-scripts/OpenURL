@@ -46,9 +46,9 @@ def get(message):
 		return None
 
 ## Regexes
-rx_http_link = re.compile(r"https?://[a-zA-Z0-9\.-/_%?&#=]*")
-rx_www_link = re.compile(r"www\.[a-zA-Z0-9\.-/_%?&#=]*")
-rx_ftp_link = re.compile(r"ftps?://[a-zA-Z0-9\.-/_%?&#=]*")
+rx_http_link = re.compile(r"https?://[a-zA-Z0-9\./_%?&#=-]*")
+rx_www_link = re.compile(r"www\.[a-zA-Z0-9\./_%?&#=-]*")
+rx_ftp_link = re.compile(r"ftps?://[a-zA-Z0-9\./_%?&#=-]*")
 rx_email_address = re.compile(r"\w*@\w*\.\w*")
 rx_has_protocol = re.compile(r"^[a-zA-Z]*://")
 
